@@ -30,3 +30,6 @@ class HomePageViewTest(TestCase): # new
         resp = self.client.get(reverse('home'))
         self.assertEqual(resp.status_code, 200)
         self.assertTemplateUsed(resp, 'home.html')
+
+        
+
